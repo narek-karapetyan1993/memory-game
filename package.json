@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./ --fix",
+    "lint:report": "eslint --format gitlab ./",
+    "cypress:open": "cypress open",
+    "start": "serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.2.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-formatter-gitlab": "^2.1.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "serve": "^14.1.2"
+  }
+}

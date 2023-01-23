@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+
+      <div id="timer"></div>
+
+      <a class="reset__game" href="">
+        <svg width="40px" height="40px" viewbox="0 0 15 15">
+          <g>
+            <path style="fill:#ffffff;" d="M8,2.019V0L4,3l4,3V4.027c2.25,0.249,4,2.156,4,4.473c0,2.485-2.015,4.5-4.5,4.5S3,10.985,3,8.5
+            C3,8.331,3.01,8.164,3.027,8H1.019C1.007,8.165,1,8.332,1,8.5C1,12.09,3.91,15,7.5,15S14,12.09,14,8.5
+            C14,5.078,11.356,2.274,8,2.019z" />
+          </g>
+        </svg>
+      </a>
+
+      <form class="form" action="/">
+        <label class="form__label">
+          <small class="form__label-description">
+            Чётное кол-во карточек по <br> вертикали&#47;горизонтали от 2 до 10
+          </small>
+          <input class="form__input" type="number" min="2" max="10">
+        </label>
+
+        <button type="submit" class="form__btn">Начать игру</button>
+      </form>
+
+      <ul class="game__board"></ul>
+
+      <div class="again">
+        <button class="again__btn">Сыграть ещё раз</button>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
